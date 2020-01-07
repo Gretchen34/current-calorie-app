@@ -1,0 +1,184 @@
+body {
+  font-family: "Helvetica", "Verdana", sans-serif;
+  margin: 0;
+  background-color: #D3D3D3;
+}
+
+#sr,
+#c {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.header #butInstall{
+   background-image: url("images/icon-120X120.png");
+}
+
+#totalCalDiv{
+  font-size: 1.3rem;
+}
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.cardHead {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 1.7rem;
+}
+
+.listSH {
+  color: #696969;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.listItem {
+  background-color: #FFF;
+  margin: 10px;
+  padding: 10px;
+}
+
+.header {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+  font-family: "Fredericka the Great", cursive;
+  color: white;
+  background-image: url("https://cdn.glitch.com/7de8767e-4b6f-4031-9852-caa80779477d%2Fezgif.com-gif-maker.webp?v=1576018614829");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+#tCal {
+  font-size: 1.7rem;
+}
+
+.button {
+  font-family: "Fredericka the Great", cursive;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.3rem; /*change with media query to 3rem*/
+  padding: 10px; /*change with media query to 20px*/
+  width: 33%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+input[type="text"] {
+  width: 66%; /*change with media query to 33% ?*/
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+  background-image: url("https://cdn.glitch.com/d0a9cce1-bb43-46ad-99db-898736f3f689%2Fsearch-icon%20-%20Edited.png?v=1575348847033");
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type="text"]:focus {
+  width: 90%;
+}
+
+#toper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#toper > div.card {
+  text-align: left;
+  font-size: 1.3em;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+#top {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    padding: 20px;
+    font-size: 4rem;
+  }
+
+  .button {
+    font-size: 3rem;
+    padding: 20px;
+  }
+
+  input[type="text"] {
+    width: 33%;
+  }
+
+  #toper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardHead {
+    font-size: 3rem;
+  }
+
+  #tCal {
+    font-size: 3rem;
+  }
+} /*media query for +600px*/
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background-image: url("https://cdn.glitch.com/6f3a829f-b2a7-4a9d-9d26-9f588eb3561e%2Fcopy%20cal.jpg?v=1575223599910");
+    background-size: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+
+  .header {
+    background-image: none;
+  }
+
+  #sr,
+  #c {
+    color: white;
+  }
+}

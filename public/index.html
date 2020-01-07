@@ -1,0 +1,75 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ <meta name="description" content="Calorie counter app v1 as a pwa">
+   <meta name="theme-color" content="#2F3BA2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calorie calculator Current</title> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="icon" href="https://cdn.glitch.com/7de8767e-4b6f-4031-9852-caa80779477d%2Fwhite.png?v=1576190970450" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icon-152x152.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512"  href="/icon-512x512.png">
+  <link rel="manifest" href="/manifest.json">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  </head>
+<body onload="showCards()">
+ 
+  
+
+
+<div class="header">
+  <span id="banner">Calorie Calculator</span>
+  <br>
+  <input type="text" id="uI" name="userInput" aria-label="userInput" value="" placeholder="Enter a food or dish" ><br>	
+  
+  <button class="button" id="inButtn" onclick="setInput()" style="vertical-align:middle"><span>Search</span></button>
+  <br>
+  <button id="butInstall" aria-label="Install" hidden> </button>
+  <div>
+    Total Calories:   <span id="tCal"></span>
+    <div id="totalCalDiv">
+      
+    </div>
+    
+  </div>
+  
+</div><!--header-->
+  
+<div class = "grid-container">
+  <div id="c">
+    
+  </div>
+  <div id="toper">
+   
+  </div>
+  
+ <div id="top">
+   
+  </div>
+
+</div><!--grid container-->
+
+
+
+
+
+  
+
+  <script src="client.js"></script>
+  <script src="addServiceWorker.js"></script>
+  <script src="install.js"></script>
+
+</body>
+</html>
